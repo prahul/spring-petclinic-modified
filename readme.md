@@ -3,7 +3,7 @@
 ### Spring Boot Pet Clinic app
 ### Deliverables
 * GitHub repo
-  * https://github.com/prahul/spring-petclinic
+  * https://github.com/prahul/spring-petclinic-modified
 * Jenkinsfile within that repo
   * Please refer to the Jenkinsfile at the root of the project
 * Docker file within that repo
@@ -14,7 +14,8 @@
     * $ docker pull rahulpriyadarshi/spring-petclinic:0.1
 ### Prerequisites to run the app
 * Install Docker: https://docs.docker.com/desktop/mac/install/
-* Install Jenkins: https://www.jenkins.io/download/
+* Install Alpine Jenkins: https://github.com/liatrio/alpine-jenkins
+  * Enable Docker usage: docker run -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock liatrio/jenkins-alpine
 * Install Intellij community: https://www.jetbrains.com/idea/download/#section=mac
 ### Create a docker image for the app
 * Clone the app from the GitHub
@@ -32,7 +33,7 @@
 * Login to Jenkins. Make sure no other app is running on port 8080
   * http://localhost:8080
   * Go to Dashboard -> New Item
-    * Give a name to your app "spring-petclinic"
+    * Give a name to your app "spring-petclinic-modified"
   * Select Pipeline
     * **Definition**: Pipeline Script from SCM
     * **SCM**: Git

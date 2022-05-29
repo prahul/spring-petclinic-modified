@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'echo build image'
+                sh 'docker build -t spring-petclinic-modified .'
             }
         }
         stage('Push image to artifactory') {
