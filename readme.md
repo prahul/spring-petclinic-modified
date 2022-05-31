@@ -47,9 +47,9 @@
   ![img_1.png](img_1.png)
 ### Pushing image to artifactory
 * Create an artifactory cloud account
-* $ docker login <server-name>.jfrog.io
-* $ docker tag spring-petclinic <server-name>/spring-petclinic
-* $ docker push <server-name>.jfrog.io/spring-petclinic
+* $ docker login rahultest2022.jfrog.io
+* $ docker tag spring-petclinic rahultest2022/spring-petclinic
+* $ docker push rahultest2022.jfrog.io/spring-petclinic
 ### Pushing image to DockerHub
 * $ docker login
 * $ docker tag spring-petclinic rahulpriyadarshi/spring-petclinic:0.1
