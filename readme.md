@@ -1,6 +1,6 @@
 # Getting Started
 
-![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 
 ### Spring Boot Pet Clinic app
 ### Deliverables
