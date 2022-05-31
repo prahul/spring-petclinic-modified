@@ -1,5 +1,7 @@
 # Getting Started
 
+![img_2.png](img_2.png)
+
 ### Spring Boot Pet Clinic app
 ### Deliverables
 * GitHub repo
