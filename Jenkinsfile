@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Push image to artifactory') {
             steps {
-                sh 'echo push to artifactory'
+                sh 'docker push rahultest2022.jfrog.io/spring-petclinic'
             }
         }
     }
