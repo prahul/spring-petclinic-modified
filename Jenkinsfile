@@ -16,12 +16,15 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
+                sh 'docker login'
                 sh 'docker build -t spring-petclinic-modified .'
             }
         }
         stage('Push image to artifactory') {
             steps {
-                sh 'docker push rahultest2022.jfrog.io/spring-petclinic'
+                sh 'docker login'
+                sh 'docker tag spring-petclinic rahulpriyadarshi/spring-petclinic:0.2'
+                sh 'docker push rahulpriyadarshi/spring-petclinic:0.2'
             }
         }
     }
